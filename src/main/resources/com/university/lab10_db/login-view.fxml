@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="main" focusTraversable="true" prefHeight="308.0" prefWidth="506.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.university.lab10_db.SQLLoginController">
+    <children>
+        <Label fx:id="label" alignment="CENTER" layoutY="40.0" minHeight="16" minWidth="69" prefHeight="37.0" prefWidth="524.0" stylesheets="@style.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="background" />
+            <String fx:value="button" />
+            <String fx:value="label" />
+            <String fx:value="label-bright" />
+            <String fx:value="password-field" />
+            <String fx:value="textfield" />
+         </styleClass></Label>
+        <Label alignment="CENTER_RIGHT" layoutY="93.0" prefHeight="44.0" prefWidth="127.0" stylesheets="@style.css" text="Database name">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label alignment="CENTER_RIGHT" layoutX="4.0" layoutY="130.0" prefHeight="37.0" prefWidth="120.0" stylesheets="@style.css" text="Username">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label alignment="CENTER_RIGHT" layoutY="165.0" prefHeight="44.0" prefWidth="120.0" stylesheets="@style.css" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label alignment="CENTER_RIGHT" layoutX="1.0" layoutY="205.0" prefHeight="37.0" prefWidth="120.0" stylesheets="@style.css" text="Port">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <PasswordField fx:id="password" alignment="CENTER" layoutX="129.0" layoutY="167.0" prefHeight="44.0" prefWidth="380.0" styleClass="password-field" stylesheets="@style.css">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+        <TextField fx:id="database" alignment="CENTER" layoutX="129.0" layoutY="94.0" prefHeight="37.0" prefWidth="380.0" styleClass="textfield" stylesheets="@style.css">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+        <TextField fx:id="username" alignment="CENTER" layoutX="129.0" layoutY="130.0" prefHeight="37.0" prefWidth="380.0" styleClass="textfield" stylesheets="@style.css">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+        <TextField fx:id="port" alignment="CENTER" layoutX="129.0" layoutY="211.0" prefHeight="37.0" prefWidth="380.0" styleClass="textfield" stylesheets="@style.css">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+        <Button fx:id="connect" layoutX="370.0" layoutY="248.0" mnemonicParsing="false" onAction="#onConnectionButtonClick" stylesheets="@style.css" text="Connect">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="6.0" prefHeight="21.0" prefWidth="524.0" styleClass="label-bright" stylesheets="@style.css" text="MySQL CONNECTION" textAlignment="RIGHT" wrapText="true">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+      <ComboBox fx:id="comboBox" prefWidth="150.0" />
+    </children>
+    <effect>
+        <DisplacementMap>
+            <mapData>
+                <FloatMap />
+            </mapData>
+        </DisplacementMap>
+    </effect>
+    <styleClass>
+        <String fx:value="background" />
+        <String fx:value="label-bright" />
+        <String fx:value="password-field" />
+        <String fx:value="textfield" />
+    </styleClass>
+</AnchorPane>
