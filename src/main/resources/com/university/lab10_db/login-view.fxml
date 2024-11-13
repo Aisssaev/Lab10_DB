@@ -61,7 +61,6 @@
                 <Font size="14.0" />
             </font>
         </Label>
-      <ComboBox fx:id="comboBox" prefWidth="150.0" />
     </children>
     <effect>
         <DisplacementMap>

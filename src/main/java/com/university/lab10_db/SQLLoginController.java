@@ -67,24 +67,8 @@ public class SQLLoginController {
             newStage.setTitle("SQL Requests");
             newStage.setScene(scene);
             newStage.show();
+            newStage.setFullScreen(true);
             //connect.getScene().getWindow().hide();
         }
-    }
-
-    private List<String> getSchemaTables() throws SQLException {
-        List<String> tableNames = new ArrayList<>();
-        var metaDAta = conn.getMetaData();
-        var resultSet = metaDAta.getTables(null, null, "%", new String[]{"TABLE"});
-        while (resultSet.next()) {
-            tableNames.add(resultSet.getString("TABLE_NAME"));
-        }
-        return tableNames;
-    }
-
-    private ComboBox<String> addDatabaseComboBox(List<String> tableNames) throws SQLException {
-        ComboBox<String> tableSelector = new ComboBox<>();
-        tableSelector.getItems().addAll(tableNames);
-        tableSelector.setPromptText("Виберіть таблицю");
-        return tableSelector;
     }
 }

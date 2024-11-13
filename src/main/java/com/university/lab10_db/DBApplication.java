@@ -12,10 +12,10 @@ import java.util.Locale;
 public class DBApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(DBApplication.class.getResource("login-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(DBApplication.class.getResource("request-view.fxml"));
         Locale.setDefault(new Locale("uk", "UA"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 500);
-        stage.setTitle("Login MySQL");
+        stage.setTitle("Table");
         stage.setScene(scene);
         stage.show();
     }
